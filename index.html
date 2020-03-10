@@ -4,43 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>azkihidayatulloh - android developer</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>alfalabs.studio</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 16px;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        .footer {
+            margin-top: 20px;
+        }
+    </style>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="header">
-            <div class="logo flex-1">
-                <a href="index.html">Azki Hidayatulloh</a>
-            </div>
-            <div class="nav flex-1">
-                <a href="about.html">About</a>
-                <a href="project.html">Project</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-
-        <div class="content">
-            <div class="left-content flex-1">
-                <img src="images/pic.jpeg" width="100%">
-            </div>
-            <div class="right-content flex-1">
-                <h1>Hello <span>Universe!</span></h1>
-                <p>I'm Azki, junior android developer based on Indonesia.</p>
-            </div>
-        </div>
+        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_m6cuL6.json" background="transparent"
+            speed="1" style="width: 300px; height: 300px;" loop autoplay>
+        </lottie-player>
 
         <div class="footer">
-            <div class="links flex-1">
-                <a href="https://github.com/azkihidayatulloh" target="__blank">Github</a>
-                <a href="https://www.linkedin.com/in/azki-hidayatulloh-ab9a81152/" target="__blank">Linkedin</a>
-            </div>
-            <div class="copyright flex-1">&copy; 2019 azkihidayatulloh</div>
+            <a href="https://github.com/azkihidayatulloh" target="__blank">Github</a>
+            <a href="https://www.linkedin.com/in/azki-hidayatulloh-ab9a81152/" target="__blank">Linkedin</a>
         </div>
     </div>
+
+    <script>
+        document.getElementById("yearFooter").innerHTML = new Date().getFullYear()
+    </script>
 </body>
 
 </html>
